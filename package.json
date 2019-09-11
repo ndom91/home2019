@@ -1,7 +1,7 @@
 {
-  "name": "mxb.dev",
-  "version": "4.1.0",
-  "description": "Personal Website of Max Böck",
+  "name": "ndo.dev",
+  "version": "0.1.0",
+  "description": "Personal Website of Nico Domino",
   "scripts": {
     "start": "gulp build:dev && yarn run serve",
     "build": "NODE_ENV=production gulp build && yarn run build:lambda",
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/maxboeck/mxb"
+    "url": "http://github.com/ndom91/mxb"
   },
-  "author": "Max Böck",
+  "author": "Nico Domino",
   "license": "MIT",
   "browserslist": [
     "> 0.25%",

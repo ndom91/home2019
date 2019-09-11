@@ -29,7 +29,6 @@ module.exports = function(config) {
     config.addLayoutAlias('base', 'base.njk')
     config.addLayoutAlias('page', 'page.njk')
     config.addLayoutAlias('post', 'post.njk')
-    config.addLayoutAlias('note', 'note.njk')
 
     // Pass-through files
     config.addPassthroughCopy('src/site.webmanifest')
@@ -79,14 +78,6 @@ module.exports = function(config) {
             .filter(item => item.inputPath.match(pathsRegex) !== null)
             .filter(item => item.data.permalink !== false)
             .filter(item => !(item.data.draft && isProduction))
-    })
-
-    // Collections: Notes
-    config.addCollection('notes', function(collection) {
-        return collection
-            .getAllSorted()
-            .filter(item => item.inputPath.match(/\/notes\//) !== null)
-            .reverse()
     })
 
     // Minify HTML Output

@@ -20,27 +20,20 @@ const babelConfig = {
 const webpackConfig = {
     entry: {
         main: `./${config.assetSrc}/scripts/main.js`,
-        webmentions: `./${config.assetSrc}/scripts/webmentions/index.js`,
         sharer: `./${config.assetSrc}/scripts/sharer/index.js`
     },
     output: { filename: '[name].js' },
     module: {
         rules: [babelConfig]
     },
-    plugins: [
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: JSON.stringify(process.env.NODE_ENV)
-            }
-        })
-    ]
+    plugins: [ ]
 }
 
 gulp.task('scripts', function() {
     return gulp
         .src(config.assetSrc + '/scripts/main.js')
         .pipe(webpackStream(webpackConfig))
-        .pipe(uglify())
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest(config.assetDest + '/js'))
+        .pipe(uglify()) 
+        .pipe(rename({ suffix: '.min' })) 
+        .pipe(gulp.dest(config.assetDest + '/js')) 
 })

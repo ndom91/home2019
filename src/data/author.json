@@ -1,27 +1,19 @@
 {
-    "name": "Max Böck",
-    "email": "hello@mxb.dev",
+    "name": "Nico Domino",
+    "email": "hi@ni.co.de",
     "avatar": "/assets/images/avatar.jpg",
     "social": {
         "twitter": {
-            "name": "mxbck",
-            "url": "https://twitter.com/mxbck"
+            "name": "ndom91",
+            "url": "https://twitter.com/ndom91"
         },
         "github": {
-            "name": "maxboeck",
-            "url": "https://github.com/maxboeck"
-        },
-        "codepen": {
-            "name": "mxbck",
-            "url": "https://codepen.io/mxbck/"
-        },
-        "notist": {
-            "name": "mxb",
-            "url": "https://noti.st/mxb"
+            "name": "ndom91",
+            "url": "https://github.com/ndom91"
         },
         "keybase": {
-            "name": "mxb",
-            "url": "https://keybase.io/mxb"
+            "name": "ndom91",
+            "url": "https://keybase.io/ndom91"
         }
     }
 }

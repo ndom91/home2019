@@ -1,9 +1,9 @@
 {
-    "title": "Max Böck - Frontend Web Developer",
-    "description": "Max Böck is a professional frontend developer based in Vienna, Austria.",
+    "title": "Nico Domino - System Administrator",
+    "description": "Nico Domino is a professional web creator based in Frankfurt, Germany.",
     "lang": "en",
     "locale": "en_US",
-    "domain": "mxb.dev",
-    "url": "https://mxb.dev",
-    "repo": "https://github.com/maxboeck/mxb"
+    "domain": "ndo.dev",
+    "url": "https://ndo.dev",
+    "repo": "https://github.com/ndom91/mxb"
 }
