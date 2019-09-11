@@ -1,10 +1,10 @@
 # ndo.dev
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/57999461-2350-4da3-8788-ca4e0e6dcb30/deploy-status)](https://app.netlify.com/sites/mxb/deploys)  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/311ca4b4-e3bb-4cf7-b13c-e394e9caa022/deploy-status)](https://app.netlify.com/sites/ndom91/deploys)
 
-Source code for [ndo.dev](https://ndo.dev), my personal website.  
+Source code for [ndo.dev](https://ndo.dev), my personal website.  This version is built with [Eleventy](https://www.11ty.io). 
 
-This version is built with [Eleventy](https://www.11ty.io). If you're looking for the previous Jekyll-based site, that repo has moved to [https://github.com/ndom91/ni.co.de](https://github.com/ndom91/ni.co.de)
+> If you're looking for the previous Jekyll-based site, that repo has moved to [https://github.com/ndom91/ni.co.de](https://github.com/ndom91/ni.co.de)
 
 ## Features
 
@@ -29,6 +29,10 @@ The most important commands can be run as npm scripts:
 `npm run build`: make a production build  
 `npm run serve`: serve the current build `dist` directory  
 `npm run debug`: start Eleventy in debug mode and serve the site  
+
+## Screenshot
+
+> ![Screenshot](http://i.imgur.com/Po3K5Pm.png)
 
 --- 
 
