@@ -5,13 +5,13 @@
     "short_name": "ndo",
     "icons": [
         {
-            "src": "/assets/images/favicon/android-chrome-192x192.png",
-            "sizes": "192x192",
+            "src": "/assets/images/favicon/android-chrome-196x196.png",
+            "sizes": "196x196",
             "type": "image/png"
         },
         {
-            "src": "/assets/images/favicon/android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "/assets/images/favicon/android-chrome-152x152.png",
+            "sizes": "152x152",
             "type": "image/png"
         }
     ],
