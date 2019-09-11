@@ -29,7 +29,7 @@ permalink: about/index.html
                     <p>
                         I've been building stuff on the web for the last 10 years, 5 professionally. 
                     </p>
-                    <p>My focus is on creating engaging, accessible &amp; performant interfaces for humans.</p>
+                    <p>I like creating engaging, practicle, accessible content online! </p>
                 </div>
             </div>
             <div class="about__content markdown">
@@ -39,11 +39,29 @@ permalink: about/index.html
                     dedicated to getting your business connected to the rest of the world.
                 </p>
             
-                <h2>Offline</h2>
-                <p>
-                    I do stuff offline, I swear!
-                    
-                </p>
+                <div class="projects">
+                    <h2>Projects</h2>
+                    {% for project in projects %}
+                        <p>
+                            <a href="{{ project.url }}">
+                                <h4>{{ project.name  }}</h4>
+                                <img class="about-screenshot" src="{{ project.image }}" alt="Screenshot {{ project.name }}"></img>
+                            </a>
+                        </p>
+                    {% endfor %}
+                    <p>
+                        <h4>home.newtelco.de</h4>
+                        <img class="about-screenshot" src="/assets/images/screenshots/homenewtelco.png" alt="Screenshot home.newtelco.de"></img>
+                    </p>
+                    <p>
+                        <h4>youtube.ndo.dev</h4>
+                        <img class="about-screenshot" src="/assets/images/screenshots/youtube.png" alt="Screenshot youtube.ndo.dev"></img>
+                    </p>
+                    <p>
+                        <h4>vacation</h4>
+                        <img class="about-screenshot" src="/assets/images/screenshots/vacationnewtelco.png" alt="Screenshot vacation"></img>
+                    </p>
+                </div>
 
                 <h2>Online</h2>
                 <ul class="about__social">

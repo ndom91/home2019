@@ -48,4 +48,15 @@
             @include container-narrow;
         }
     }
+
+    .projects {
+        h4 {
+            font-family: monospace;
+        }
+    }
+
+    .about-screenshot {
+        border: 25px solid $gray-light;
+
+    }
 }

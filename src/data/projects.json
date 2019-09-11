@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "vacation": {
+      "name": "Vacation",
+      "url": "https://vacation.newtelco.de",
+      "image": "/assets/images/screenshots/newtelcovacation.png"
+    },
+    "youtube": {
+      "name": "Vacation",
+      "url": "https://youtube.ndo.dev",
+      "image": "/assets/images/screenshots/youtube.png"
+    },
+    "home": {
+      "name": "Newtelco Home",
+      "url": "https://home.newtelco.de",
+      "image": "/assets/images/screenshots/homenewtelco.png"
+    }
+  }
+}

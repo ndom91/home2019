@@ -17,21 +17,22 @@
 
 # Netlify subdomain
 [[redirects]]
-    from = "https://mxb.netlify.com/*"
-    to = "https://mxb.dev/:splat"
+    from = "https://ndom91.netlify.com/*"
+    to = "https://ndo.dev/:splat"
     status = 301
     force = true
 
-# AT domain
+# iamnico.xyz domain
 [[redirects]]
-    from = "https://mxb.at/*"
-    to = "https://mxb.dev/:splat"
+    from = "https://iamnico.xyz/*"
+    to = "https://ndo.dev/:splat"
     status = 301
     force = true
 
+# ni.co.de domain
 [[redirects]]
-    from = "https://www.mxb.at/*"
-    to = "https://mxb.dev/:splat"
+    from = "https://ni.co.de/*"
+    to = "https://ndo.dev/:splat"
     status = 301
     force = true
 
