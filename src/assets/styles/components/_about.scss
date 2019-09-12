@@ -57,6 +57,11 @@
 
     .about-screenshot {
         border: 25px solid $gray-light;
+    }
 
+    .projects > img:hover {
+        box-shadow: 0 0 15px 10px #bfbfbf;
+        transform: translateY(-3px);
+        transition: all 300ms ease-in-out;
     }
 }
