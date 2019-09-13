@@ -42,31 +42,18 @@ permalink: about/index.html
                 <div class="projects">
                     <h2>Projects</h2>
                     {% for project in projects %}
-                        <p>
-                            <a href="{{ project.url }}">
-                                <h4>{{ project.name  }}</h4>
-                                <img class="about-screenshot" src="{{ project.image }}" alt="Screenshot {{ project.name }}"></img>
-                            </a>
-                        </p>
+                    <div class="project__card">
+                        {% if project.image %}
+                        <img class="project__screenshot" src="{{ project.image }}" alt="Screenshot {{ project.name }}"></img>
+                        {% endif %}
+                        <a target="_blank" href="{{ project.url }}">
+                            <h3 class="project__label">{{ project.name  }}</h3>
+                            <div class="project__desc">
+                                {{ project.desc }}
+                            </div>
+                        </a>
+                    </div>
                     {% endfor %}
-                    <p>
-                        <a href="https://home.newtelco.de">
-                          <h4>home.newtelco.de</h4>
-                        </a>
-                        <img class="about-screenshot" src="/assets/images/screenshots/homenewtelco.png" alt="Screenshot home.newtelco.de"></img>
-                    </p>
-                    <p>
-                        <a href="https://youtube.ndo.dev">
-                          <h4>youtube.ndo.dev</h4>
-                        </a>
-                        <img class="about-screenshot" src="/assets/images/screenshots/youtube.png" alt="Screenshot youtube.ndo.dev"></img>
-                    </p>
-                    <p>
-                        <a href="https://vacation.newtelco.dev">
-                          <h4>vacation</h4>
-                        </a>
-                        <img class="about-screenshot" src="/assets/images/screenshots/vacationnewtelco.png" alt="Screenshot vacation"></img>
-                    </p>
                 </div>
 
                 <h2>Online</h2>
