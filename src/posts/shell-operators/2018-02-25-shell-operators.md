@@ -1,16 +1,17 @@
 ---
-title:  "shell-operators"
+title:  "Bash Operators"
 tags: ["servers", "linux"]
+image: "bash.png"
 ---
-![bash](../assets/img/gnubash_logo_transparent.png)
 
-These are called shell operators and yes, there are more of them. I will give a brief overview of the most common among the two major classes, control operators and redirection operators, and how they work with respect to the bash shell.
+These are called shell operators and yes, there are more of them. I will give a brief overview of the most common among the two major classes, control operators and redirection operators.
+
 A. Control operators
 
-These are tokens that perform control functions, one of \|\|, !, &&, &, ;, ;;, \|, \|&, (, or ).
+These are tokens that perform control functions, one of `\|\|, !, &&, &, ;, ;;, \|, \|&, (, or )`.
 
 A.1 List terminators
-
+```
   >  ; : Will run one command after another has finished, irrespective of the outcome of the first.
 
   >  command1 ; command2
@@ -26,9 +27,11 @@ A.1 List terminators
   >  Here, command1 is launched in the background and command2 starts running in the foreground immediately, without waiting for command1 to exit.
 
   >  A newline after command1 is optional.
+```
 
 A.2 Logical operators
 
+```
   > && : Used to build AND lists, it allows you to run one command only if another exited successfully.
 
   > command1 && command2
@@ -62,9 +65,9 @@ A.2 Logical operators
     !: This is the “not” operator, used to negate the return status of a command — return 0 if the command returns a nonzero status, return 1 if it returns the status 0.
 
   > ! command1
-
+```
 A.3 Pipe operator
-
+```
   > | : The pipe operator, it passes the output of one command as input to another. A command built from the pipe operator is called a pipeline.
 
   > command1 | command2
@@ -73,15 +76,15 @@ A.3 Pipe operator
     |& : This is a shorthand for 2>&1 | in bash and zsh. It passes both standard output and standard error of one command as input to another.
 
   > command1 |& command2
-
+```
 A.4 Other list punctuation
-
+```
   > ;; is used solely to mark the end of a case statement. Ksh, bash and zsh also support ;& to fall through to the next case and ;;& (not in ATT ksh) to go on and test subsequent cases.
 
   > ( and ) are used to group commands and launch them in a subshell. { and } also group commands, but do not launch them in a subshell. See this answer for a discussion of the various types of parentheses, brackets and braces in shell syntax.
-
+```
 B. Redirection Operators
-
+```
   > These allow you to control the input and output of your commands. They can appear anywhere within a simple command or may follow a command. Redirections are processed in the order they appear, from left to right.
 
   > < : Gives input to a command.
@@ -163,13 +166,14 @@ B. Redirection Operators
     sed 's/a/A/' << EOF<br>
     $foo<br>
     EOF
+```
 
-A few other operators (>&-, x>&yx<&y) can be used to close or duplicate file descriptors. For details on them, please see the relevant section of your shell’s manual (here for instance for bash).
+A few other operators `(>&-, x>&yx<&y)` can be used to close or duplicate file descriptors. For details on them, please see the relevant section of your shell’s manual (here for instance for bash).
 
 That only covers the most common operators of Bourne-like shells. Some shells have a few additional redirection operators of their own.
 
-Ksh, bash and zsh also have constructs <(…), >(…) and =(…) (that latter one in zsh only). These are not redirections, but process substitution.
+Ksh, bash and zsh also have constructs `<(…)`, `>(…)` and `=(…)` (that latter one in zsh only). These are not redirections, but process substitution.
 
-
-
-source: [https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators](https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators)
+---
+  
+  Source: [StackExchange](https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators)

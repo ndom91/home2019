@@ -1,5 +1,5 @@
 ---
-title:  "iptables quickie"
+title:  "iptables"
 tags: ["servers", "linux"]
 ---
 

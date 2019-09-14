@@ -1,5 +1,5 @@
 ---
-title:  "lynis auditing"
+title:  "Lynis - Linux Server Auditing"
 tags: ["servers", "linux"]
 ---
 

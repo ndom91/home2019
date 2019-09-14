@@ -1,5 +1,5 @@
 ---
-title:  "magicmirror"
+title:  "MagicMirror"
 tags: ["side project", "self hosted", "linux"]
 ---
 

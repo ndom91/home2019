@@ -1,5 +1,5 @@
 ---
-title:  "nextcloud"
+title:  "Nextcloud Setup"
 tags: ["side project", "self hosted", "linux"]
 ---
 

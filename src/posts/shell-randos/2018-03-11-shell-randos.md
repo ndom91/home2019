@@ -1,5 +1,5 @@
 ---
-title:  "shell randos"
+title:  "Bash Aliases"
 tags: ["servers", "linux"]
 ---
 
