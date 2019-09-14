@@ -32,7 +32,7 @@ module.exports = function(config) {
 
     // Pass-through files
     config.addPassthroughCopy('src/site.webmanifest')
-    /* config.addPassthroughCopy('src/keybase.txt') */
+    config.addPassthroughCopy('src/keybase.txt')
     config.addPassthroughCopy('src/robots.txt')
     config.addPassthroughCopy('src/favicon.ico')
     config.addPassthroughCopy('src/assets/images')
