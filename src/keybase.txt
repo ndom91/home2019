@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ndom91
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://iamnico.xyz
+  * I am ndom91 (https://keybase.io/ndom91) on keybase.
+  * I have a public key ASA3MSQKIrqQiITYVsGg53m4vA19Qqep5keWNPEd3WJbkAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120878e0173cee1829ebccc3d5b6c2ad0adf8c8bf5eeff44ac795469a670a29e7430a",
+      "host": "keybase.io",
+      "kid": "01203731240a22ba908884d856c1a0e779b8bc0d7d42a7a9e6479634f11ddd625b900a",
+      "uid": "d4200c62a05f07d22971e69b73e1e719",
+      "username": "ndom91"
+    },
+    "merkle_root": {
+      "ctime": 1568479944,
+      "hash": "12062fbff57a1283e1d1a5e6d72338974a7efca70ab83ec3ee246d3026bde3ce4f8b664c81bf070a053eb7b0d27b7664fe6e98da0ffdac5e35f0a282d79b8a32",
+      "hash_meta": "1c2502d3cb99a8361a57afd876d071308eb808074bcc450a01323e588c49111a",
+      "seqno": 7331906
+    },
+    "service": {
+      "entropy": "BhaftXxcXFeZVn3OPZM8uA0p",
+      "hostname": "iamnico.xyz",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.1"
+  },
+  "ctime": 1568479946,
+  "expire_in": 504576000,
+  "prev": "95d23b91fec4d447f0cef8ff709ce90c5d271cc42eb886efc22b028c7bcf6c22",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgNzEkCiK6kIiE2FbBoOd5uLwNfUKnqeZHljTxHd1iW5AKp3BheWxvYWTESpcCDMQgldI7kf7E1Efwzvj/cJzpDF0nHMQuuIbvwisCjHvPbCLEIJ+2rXRY2epu1PkOiU08snos2kQot0q6eKjVa6Q4zlpwAgHCo3NpZ8RAZ8dwPwdNp5OVu9A9whD/YZ2ak45E43uHJUlgc6RbppRtgRthje4FKvBJ3LLoCQ724pLftNUYPN6V8YAJHiKHCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIOd+eX9VCseP8L7XRwInTGbrPrswNz5+KPLCXXH51Vyo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ndom91
+
+==================================================================
