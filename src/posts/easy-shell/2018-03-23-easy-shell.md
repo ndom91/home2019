@@ -1,37 +1,29 @@
 ---
-title:  "basic shell"
+title:  "Bash Intro"
 tags: ["linux", "servers"]
 ---
-
-## for your daily linux hacking
 
 Easy Shell is a collection of useful boilerplate linux
 commands for the daily life of every linux user!
 
 All credit goes to [lucasviola](https://github.com/lucasviola/easyshell) on GitHub!
 
-## Hey you!
+## Welcome
 
-This is a "go through" guide intended to help newcomers and medium Linux users on consulting useful bash commands.
+This is a basics guide intended to help newcomers and experienced Linux users alike get more comfortable with Bash.
 
-This is a living web page! Which means it will be updated on a regular basis as more and more people contribute to it :)
+This is not a tutorial or anything of that nature, just a collection of useful commands, materials, tips and tricks gathered from around the internet.
 
-This is not a guide, nor a tutorial for Linux, Shell or Bash. For reals. It's just a collection of some good commands, materials, tips and tricks gathered from all around the internet and presented in a nice way so you can easily find it.
+## Introduction
 
-Thank you and keep bashing!
-
-## Introduction: basic linux knowledge
-
-- This is probably the most important lesson you will ever learn on Linux: man pages are your best friend! Learn to read them. Learn to understand them. Learn to love them.
+This is probably the most important lesson you will ever learn on Linux: **man pages are your best friend!** Learn to love them.
 
 To access a man page on any linux program just type:
 
-  
- man <program>!
- 
+```
+man <program>
 
-E.g:
-
+For example:
   
 $ man ps
 PS(1)                User Commands                     PS(1)
@@ -52,87 +44,73 @@ DESCRIPTION
        1   UNIX options, which may be grouped and must be preceded by a dash.
        2   BSD options, which may be grouped and must not be used with a dash.
        3   GNU long options, which are preceded by two dashes.
+```
 
- 
+- To view currently running programs / processes:
 
-- To view a short information on any program:
+`ps -aux`
 
+- To view a brief summary on any program:
   
-whatis <program>
- 
+`whatis <program>`
 
-- You can also find out where it is located by typing:
-
+- You can find out where a file is located by typing:
   
-whereis <program>
- 
+`whereis <program>` or `locate <program>`
 
 - To change user:
 
-  
-sudo -u <user>
+`sudo -u <user>`
  
-
 - To change user to superuser (root):
 
-  
-sudo su
- 
+`sudo su`
 
-
-Attention: This is not recommended since as a superuser you have total control of your system, hence you can end up fucking it badly.
-
-- "/" represents the root directory.
-
-- "~" is an alias for your user's home directory, which usually is: /home/youruser/.
-
-- "." represents the current directory
-
-- To decompress a tarball:
-
-  
-tar -vzx <compressed-file.tar.gz>
- 
-
-Note: Flag **-v** is for verbosity.
+> This is not recommended! As a superuser you have the rights modify any file, allowing you to fuck your system if you don't know what you're doing.
 
 - To see your session history:
-
   
-history
+`history`
+
+- `|` is the pipe character and is used to 'pipe' the output from one command into another as the input.
+
+Remember `ps` lists running processes. That list can be huge, so if we want to search only for processes running which include the word 'init' (hint `grep` filters output): 
+
+`ps -aux | grep init`
  
-
-Pretty useful stuff:
-
-- `|` is a piping operator. It is used for inserting the output of a program into the input of another program.
-
-E.g:
-
-Listing all process called "init":
-
+- Similarly `>` and `>>` are called angle brackets and are used to redirect output. For example, you can write the output of one command into a file by doing:
   
-ps -aux | grep init
- 
+`echo "any random sentence" >> any-random-file.txt`
+or
+`ps -aux | grep chrome >> any-random-file.txt`
 
-- You can quickly write something into a file by doing:
+> There is an important difference between using one and two angle brackets like this. The double angle brackets (`>>`) will concatenate, or append to the target file, while the single angle bracket (`>`) will overwrite anything that was previously in the target file.
 
+## File System Basics
+
+- `/` represents the root directory.
+
+- `~` is an alias for your user's home directory, which usually is: `/home/youruser/`.
+
+- `.` represents the current directory
+
+### Compression
+
+- To decompress a tarball:
   
-echo "any random sentence" >> any-random-file.txt
- 
+`tar -xvf <compressed-file.tar.gz>`
 
-The '>>' operator will concatenate the sentence to the end of the file.
-
-BE CAREFUL not to use '>' instead of '>>' since the former will OVERWRITE the content of the file instead of adding the sentence to it.
+> Note: Flag **-v** is for verbosity.
 
 - You can call a previously used command pra typing "!" plus the initials of the said program.
 
 For example, let us say you want to edit .bashrc and then open it to edit again:
 
-  
+```bash  
 vim ~/.bashrc
 exec bash
 !vim #This will execute the last command on history with the "vim" initials
- 
+```
 
 - `uname -a` will tell you information about your system
 
@@ -144,39 +122,38 @@ exec bash
 
 Show all network interfaces
 
-  
-ifconfig
+`ifconfig`
  
 
 Configure a wireless network interface
 
   
-iwconfig
+`iwconfig`
  
 
 Get more information about wireless interface
 
   
-iwlist <your_interface_here> scan
+`iwlist <your_interface_here> scan`
  
 
 <!---excerpt--->
 Check hardware information include about your network, this shows PCIs drivers which is installed or not
 
   
-lspci
+`lspci`
  
 
 Show who is connected in your network  
 
   
-nmap 192.168.0.*
+`nmap 192.168.0.*`
  
 
 Verify if you have any open port
 
   
-nmap <your_ip>
+`nmap <your_ip>`
  
 
 ## Custom Bash
@@ -188,14 +165,14 @@ The `PS1` environment variable contains the style for the bash cursor:
 Export it to your ~/.bashrc file:
 
   
-export PS1='\u@\h \$'
+`export PS1='\u@\h \$'`
  
 
 This will print the following as a cursor: `user@host $`
 
 Some formatting options can be:
 
-  
+```bash  
 \h - The hostname, up to the first ' . '
 
 \H - The hostname.
@@ -213,7 +190,7 @@ Some formatting options can be:
 \w - The current working directory, with $HOME abbreviated with a tilde.
 
 \W - The basename of $PWD, with $HOME abbreviated with a tilde.
- 
+```
 
 Further reading:
 
@@ -224,104 +201,73 @@ Further reading:
 [Bash manual](http://www.gnu.org/software/bash/manual/bashref.html)
 
 
-## Tailing
-
-### Search, save and simplify command outputs:
+### Text File Manipulation
 
 Bit bucket (as known as the black hole, one of the linux's special files):
 
-  
-/dev/null
- 
+`/dev/null`
 
 Standard input stream:
-
   
-STDIN
- 
+`STDIN`
 
 Standard outpout streams:
-
   
-STDERR and STDOUT
- 
+`STDERR and STDOUT`
 
 Tailing files (getting the last lines)
-
   
-tail <file>
- 
+`tail <file>`
 
 Outputing whole file content
-
   
-cat <file>
+`cat <file>`
  
-
-
 Reading from `STDIN` to a file (stop with `CTRL + C`)
 
-  
-cat > <file>
- 
+`cat > <file>`
 
 Reading from file to another file
-
   
-cat <file1> > <file2>
- 
+`cat <file1> > <file2>`
 
 Reading all lines of file with line numbers
-
   
-cat -n <file>
- 
+`cat -n <file>`
 
-Saving output to file (using nano editor)
-
+Saving output to file (using nano editor, allowing you to edit before saving)
   
-<command> | nano file_name
- 
+`<command> | nano file_name`
 
 Searching through the output
-
   
-<command> | grep <term>
- 
+`<command> | grep <term>`
 
 Displaying output in a file-like style (`less` allows searching by pressing `/`)
-
   
-<command>|less or
-<command>|more
- 
+`<command> | less`
+or
+`<command> | more`
 
-Preventing terminal hanging (command outputs will still be shown in the terminal)
-
+Continue running after command. This will not block further running while the program waits on something (network, user input, etc.)
   
-<command>&
- 
+`<command>&`
 
-Ignoring file output completely (note that `2 = STDERR` and `1 = STDOUT`)
-
+[!] Ignoring file output completely (note that `2 = STDERR` and `1 = STDOUT`)
   
-<command> > /dev/null 2 > &1
- 
+`<command> > /dev/null 2 > &1`
 
-## File permissions
+## File Permissions
 
-- To change the owner of a directory:
-
+- To change the owner of a directory (recursively):
   
-sudo chown -R newowner:newowner
- 
+`sudo chown -R newowneruser:newownergroup`
 
 - To view actual files permissions
-
   
 ls -l
  
-
+```bash
   - Example: `drwxr-xr-x`:
     - First letter is the file type:
 
@@ -372,189 +318,134 @@ ls -l
       :---------------------:|:--------------:|:------:
        7                     |       5        |  4
       read + write + execute | read + execute | read
+```
 
-
-## Managing and killing processes
+## Managing Processes
 
 To list all processes on your system
-
   
-ps -aux
- 
+`ps -aux`
 
 To list all processes running as root
-
   
-ps -U root -u root u
- 
+`ps -U root -u root u`
 
 To list all processes owned by you
 
-  
-ps x
- 
+`ps x`
 
 Searching processes by keyword
-
   
-ps -aux | grep '<keyword>'
- 
+`ps -aux | grep '<keyword>'`
 
 Listing it Tree style
-
   
-ps -aux --forest
- 
+`ps -aux --forest`
 
 Killing a specific process
-
   
-sudo kill -9 <PID>
- 
+`sudo kill -9 <PID>`
 
 Killing all processes except for kill and init
-
   
-sudo kill -9 -1
- 
+`sudo kill -9 -1`
 
 ## Working with environment and variables
 
 Listing local variables
-
   
-set
- 
+`set`
 
 Listing global variables
-
   
-env
- 
+`env`
 
 Printing variable content
-
   
-$ foo='This is a variable!'
-$ echo $foo
- 
+`$ foo='This is a variable!'`
+`$ echo $foo`
 
 Looking for a local variable
-
   
-set | grep foo
- 
+`set | grep foo`
 
 Exporting it to env
-
   
-$ export foo
-$ env | grep foo
- 
+`$ export foo`
+`$ env | grep foo`
 
 Useful environment variables
-
   
 - $PS1 your prompt setup
 - $PATH your path setup
 - $USER your current user
- 
 
 The most important files regarding your environment are:
-
   
 1. $ ~/.profile
 2. $ ~/.bashrc
- 
 
 Both of them are shell scripts and contain instructions which are executed when you log in.
 
 Permanently exporting variables to your PATH:
-
   
 echo 'export $PATH="$PATH:/path/to/file/"' >> ~/.bashrc
- 
 
 ## Working with files
 
 - Where am I?
-
   
-pwd
- 
+`pwd`
 
 - Creating Files
 
-  
-> filename
- 
+`touch filename`  
 
 - Changing directories
-
   
-cd path/to/directory
- 
+`cd path/to/directory`
 
 - Moving things around
-
   
-mv -v <filename> /another/path/
- 
+`mv -v <filename> /another/path/`
 
 - Deleting things FOREVER
-
   
-sudo mv -v <filename> /dev/null/
- 
+`sudo mv -v <filename> /dev/null/`
 
 - Copying stuff
 
-  
-cp -v <filename> <another-filename>
- 
+`cp -v <filename> <another-filename>`
 
 - Deleting files
-
   
-rm -v <filename>
- 
+`rm -v <filename>`
 
 - Deleting folders
-
   
-rm -vR /path/to/<folder>
- 
+`rm -vR /path/to/<folder>`
 
 - Updating timestamp:
-
   
-touch <filename>
- 
+`touch <filename>`
 
 - Listing files and directories
-
   
-ls -al
- 
+`ls -al`
 
 Notes:
 - `-a` tells ls to list all files.
 - Files starting with `.` are hidden files. (Remember this).
 
 - Printing the content of a file:
-
   
-cat <filename.txt>
- 
+`cat <filename.txt>`
 
 - Printing the last 2 lines of a file:
-
   
-tail -n 2 <filename.txt>
- 
+`tail -n 2 <filename.txt>`
 
 - Printing the first 2 lines of a file:
-
   
-head -n 2 <filename.txt>
+`head -n 2 <filename.txt>`
  
