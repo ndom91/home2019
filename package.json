@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "description": "Personal Website of Nico Domino",
   "scripts": {
-    "start": "gulp build:dev && yarn run serve",
-    "build": "NODE_ENV=production gulp build && yarn run build:lambda",
-    "debug": "DEBUG=Eleventy* yarn start",
-    "serve": "gulp serve",
-    "serve:lambda": "netlify-lambda serve _lambda",
-    "build:lambda": "netlify-lambda build _lambda"
+    "start": "gulp build:dev && npm run serve",
+    "build": "NODE_ENV=production gulp build",
+    "debug": "DEBUG=Eleventy* npm start",
+    "serve": "gulp serve"
   },
   "repository": {
     "type": "git",
