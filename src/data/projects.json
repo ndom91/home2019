@@ -17,22 +17,22 @@
     },{
       "name": "NOC Dashboard",
       "urL": "https://github.com/ndom91/nt-noc-dashboard",
-      "image": "https://camo.githubusercontent.com/ef9fbd9e14442adf63a1ddcf8a593599d056aa86/68747470733a2f2f696d6775722e636f6d2f387452675354582e706e67",
+      "image": "/assets/images/screenshots/nocdashboard.png",
       "desc": "Network Operations Center Dashboard which is displayed 24/7 on a large display in the Engineers office."
     },{
       "name": "Terminal-Homepage",
       "url": "https://github.com/ndom91/terminal-homepage",
-      "image": "https://github.com/ndom91/terminal-homepage/raw/develop/terminal.gif",
+      "image": "/assets/images/screenshots/terminal.gif",
       "desc": "Pika / Preact example project. Typer effect in Terminal."
     },{
       "name": "Network Maintenances",
       "url": "https://github.com/ndom91/NewtelcoMaintenance",
-      "image": "https://camo.githubusercontent.com/f3decc600af77f796518e5f83d320a39a07628f6/687474703a2f2f692e696d6775722e636f6d2f317837674257772e706e67",
+      "image": "/assets/images/screenshots/maintenance.png",
       "desc": "Application for managing, organizing, and auditing Network Maintenance requests, including forwarding notices onto customers."
     },{
       "name": "create-pika-app - node cli",
       "url": "https://github.com/ndom91/create-pika-app",
-      "image": "https://github.com/ndom91/create-pika-app/raw/master/cpa.gif",
+      "image": "/assets/images/screenshots/cpa.gif",
       "desc": "Bootstrapping command line application for Pika(web). Spits out a beginner Preact/Typescript/Babel/Pika Project."
     }
 
