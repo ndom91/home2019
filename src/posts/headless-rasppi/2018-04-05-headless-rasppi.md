@@ -4,13 +4,12 @@ tags: ["raspberry pi", "linux"]
 ---
 
 ### SSH
-> Create an empty file named <code>ssh</code> _without an extension_ in the root of the <code>BOOT</code> partition
+Create an empty file named <code>ssh</code> _without an extension_ in the root of the <code>BOOT</code> partition
 
 ### WiFi
 
-> Also in the root of the <code>BOOT</code> partition:
-> Create a file named <code>**wpa_supplicant.conf**</code> with the following contents:
->  
+Also in the root of the <code>BOOT</code> partition:
+Create a file named <code>**wpa_supplicant.conf**</code> with the following contents:
 
 ```bash
 country=DE
