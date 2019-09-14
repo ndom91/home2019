@@ -3,7 +3,7 @@ title:  "Nextcloud Setup"
 tags: ["side project", "self hosted", "linux"]
 ---
 
-![nextcloud splash](nextcloud.png)
+![nextcloud splash]({{ 'nextcloud.png' | media(page) }})
 
 So you want to install your own dropbox like cloud storage service? Well you’ve made the right choice with nextcloud! Its relatively easy to install and maintain and has a vibrant community and full app store of its own!
 So without further adieu, lets begin!
