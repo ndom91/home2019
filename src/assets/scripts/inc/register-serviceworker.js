@@ -1,6 +1,7 @@
 // Register Service Worker
 
 if ('serviceWorker' in navigator) {
+    console.log('env: ',process.env.NODE_ENV)
     if (process.env.NODE_ENV !== 'production') {
         console.info('skipping service worker registration in development.')
     } else {
