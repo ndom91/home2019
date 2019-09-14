@@ -12,7 +12,7 @@ tags: ["raspberry pi", "linux"]
 > Create a file named <code>**wpa_supplicant.conf**</code> with the following contents:
 >  
 
-  
+```bash
 country=DE
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -23,4 +23,4 @@ network={
 	psk="1123581321345589"
 	key_mgmt=WPA-PSK
 }
- 
+``` 

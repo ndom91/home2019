@@ -18,7 +18,7 @@ So, without further adieu:
 
 ### Google Hangouts Emojis
 
-<pre>
+```
     h9a = {
             "!:)": 128579,
             "!:-)": 128579,
@@ -125,7 +125,7 @@ So, without further adieu:
             "}:-)": 128520,
             "}=)": 128520,
             "~@~": 128169
-</pre>
+```
 
 Pastebin: [hangouts emojis](https://paste.iamnico.xyz/I8vDQZHLTf)
 

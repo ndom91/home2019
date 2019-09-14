@@ -16,9 +16,9 @@ So lets get started!
 I like to run it out of /opt, so we’ll cd there.
 
 
-<div class="codeblok"> 
+```bash
 cd /opt
- </div>
+```
 
 
 Then we’ll download the tool. Please check the [lynis download page](https://cisofy.com/downloads/lynis/) for the newest version
@@ -27,10 +27,10 @@ sudo wget https://cisofy.com/files/lynis-2.6.2.tar.gz
 
 and extract it
 
-<div class="codeblok"> 
+```bash
  tar -xvf lynis-2.6.2.tar.gz
  cd lynis
- </div>
+```
 
 And that was actually all there is to it!
 
@@ -40,15 +40,15 @@ Now of course this isn’t the end of your journey. I want to run this as a cron
 
 So to run lynis as a cron job we’ll define the lynis command with the following options:
 
-<div class="codeblok"> 
+```bash
 ./lynis audit system --cronjob
- </div>
+```
 
 Unfortunately that will only run lynis and dump a report file on our system. In order to have it email us the results we’ll have to write a little script.
 
 I whipped up the following:
 
-<div class="codeblok"> 
+```bash
 #!/bin/bash
 
 ###################
@@ -70,20 +70,20 @@ To: [to Address]
 Subject: Lynis Scan - $CURDATE
 
 $MAILCONTENT" | /usr/sbin/sendmail [to Address]
- </div>
+```
 
 This gets saved in, for example, lynis_mail.sh
 
 Don’t forget to mark this as executable:
 
-<div class="codeblok"> 
+```bash
 sudo chmod +x /path/to/your/script/lynis_mail.sh
- </div>
+```
 
 And finally, set your cronjob like this for example to run every Monday morning at 5:30 so you can browse it on your commute to work in the train 😉
 
-<div class="codeblok"> 
+```bash
 sudo crontab -e
 
 30 5 * * MON /path/to/your/script/lynis_mail.sh
- </div>
+```

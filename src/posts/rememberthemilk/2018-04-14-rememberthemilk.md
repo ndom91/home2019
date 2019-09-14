@@ -5,7 +5,7 @@ tags: ["organisation", "linux"]
 
 ### Smart Add  
 
-> <pre>
+```
 > Due Date          -         ^ date/time  
 > Priority          -         ! priority  
 > List and Tags     -         # list/tag  
@@ -13,11 +13,11 @@ tags: ["organisation", "linux"]
 > Repeat            -         * how often 
 > Time Estimate     -         = time est.  
 > URL               -         Begin with http://
-> </pre>
+```
 <!--more-->
 ### RTM CLI
 
-><pre>
+```
 >-V, --version            output the version number
 >-p, --plain              do not use styled/colored text (overrides --color)
 >-c, --color              force the use of styled/colored text
@@ -56,4 +56,5 @@ tags: ["organisation", "linux"]
 >tags|t                              Display all tags
 >uncomp|unc [indices...]             Mark one or more Tasks as not complete
 >whoami                              Display RTM user information
->today                               Display prioritized tasks and tasks due or completed today</pre>
+>today                               Display prioritized tasks and tasks due or completed today
+```

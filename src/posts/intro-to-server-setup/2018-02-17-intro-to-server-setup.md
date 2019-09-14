@@ -13,36 +13,36 @@ Typing in my password wrong once or twice and logged in as root. Here goes nothi
 
 So the first thing I like to do is create a new user for myself and give him the correct rights.
 
-<div class="codeblok">
+```bash
 sudo add user ndom
 usermod -aG sudo ndom
-</div>
+```
 
 Now that we’ve got that out of the way, we’re going to want to step up our security a bit. To do that we’re going to immediately enable SSH only via Key Authentication and disable password login.
 
 So to begin, we’re going to generate a key-pair. Remember, you keep the private key well, private, and the public key gets stored on this server and any others you may wish to log into with this key with.
 
-<div class="codeblok"> 
+```bash
 ssh-keygen
- </div>
+```
 
 Next you’ll be prompted for a passphrase, I usually press enter here to leave this blank, but if you are extra paranoid or want to be extra secure – go ahead and enter a passphrase as well. Just beware you will have to enter this to login every time!
 
 After that is complete it will tell us where the keys were saved so that we can move/use them.
 
-<div class="codeblok"> 
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/[user]/.ssh/id_rsa):
- </div>
+```
 
 If you’ve accepted the defaults your keys will look like this:
 id_rsa and id_rsa.pub (<– psst this is the public one ;))
 
 To make life easier we can simply rename the public key "authorized_key"
 
-<div class="codeblok"> 
+```bash
 sudo mv /home/[user]/.ssh/id_rsa.pub /home/[user]/.ssh/authorized_key
- </div>
+```
 
 Just to recap, because this confused me often when I was beginning – the PUBLIC KEY stays on your server in the form of the authorized_keys file. The PRIVATE KEY leaves the server (if thats where you generated it) and never goes onto this machine again. You keep it hidden away on your client machines only to be used to setup your SSH client profiles for this server!
 
@@ -52,26 +52,26 @@ In order to get the private key onto your windows machine, for example, you have
 
 Finally we can disable Password Authentication by editing the ssh config file
 
-<div class="codeblok"> 
+```bash
 sudo nano /etc/ssh/sshd_config
 
 PasswordAuthentication no
 
 PubkeyAuthentication yes
- </div>
+```
 
 While we’re in the SSH config, I also like to disable Root login via ssh. Also double check that your authorized_keys file is located in the correct spot..
 
-<div class="codeblok"> 
+```bash
 PermitRootLogin no
 AuthorizedKeysFile /home/[user]/.ssh/authorized_keys
- </div>
+```
 
 And then finally we restart the ssh server and login with our new key!
 
-<div class="codeblok"> 
+```bash
 sudo systemctl reload sshd
- </div>
+```
 
 P.S. ssh-keygen on Linux generates SSH Keys in the OpenSSH format. If your going to be logging in from Putty on Windows, this will be a problem. Putty has its own format for keys and doesn’t play nice with OpenSSH.
 
