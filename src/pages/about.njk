@@ -43,15 +43,19 @@ permalink: about/index.html
                     <h2>Projects</h2>
                     {% for project in projects %}
                     <div class="project__card">
+                        <div class="decorativeSquare"></div>
                         {% if project.image %}
                         <img class="project__screenshot" src="{{ project.image }}" alt="Screenshot {{ project.name }}"></img>
                         {% endif %}
-                        <a target="_blank" href="{{ project.url }}">
-                            <h3 class="project__label">{{ project.name  }}</h3>
-                            <div class="project__desc">
-                                {{ project.desc }}
-                            </div>
-                        </a>
+                        <div class="project__details">
+                            <a target="_blank" href="{{ project.url }}">
+                                <h3 class="project__label">{{ project.name  }}</h3>
+                                <div class="project__desc">
+                                    {{ project.desc }}
+                                </div>
+                            </a>
+                        </div>
+                        <div class="decorativeSquare2"></div>
                     </div>
                     {% endfor %}
                 </div>

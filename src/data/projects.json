@@ -22,7 +22,7 @@
     },{
       "name": "Terminal-Homepage",
       "url": "https://github.com/ndom91/terminal-homepage",
-      "image": "https://github.com/ndom91/terminal-homepage/raw/develop/terminal.gif",
+      "image": "https://github.com/ndom91/terminal-homepage/raw/develop/terminal1.gif",
       "desc": "Pika / Preact example project. Typer effect in Terminal."
     },{
       "name": "Network Maintenances",
@@ -32,7 +32,7 @@
     },{
       "name": "create-pika-app - node cli",
       "url": "https://github.com/ndom91/create-pika-app",
-      "image": "",
+      "image": "https://github.com/ndom91/create-pika-app/raw/master/cpa.gif",
       "desc": "Bootstrapping command line application for Pika(web). Spits out a beginner Preact/Typescript/Babel/Pika Project."
     }
 
