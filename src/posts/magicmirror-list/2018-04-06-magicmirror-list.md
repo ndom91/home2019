@@ -3,14 +3,18 @@ title:  "MagicMirror"
 tags: ["side project", "self hosted", "linux"]
 ---
 
-### Software:
- [magicmirror github](https://magicmirror.builders/)
+## Software:
 
- Install:
+[magicmirror github](https://magicmirror.builders/)
+
+### Install:
+
  - [Configure RPi](https://github.com/MichMich/MagicMirror/wiki/configuring-the-raspberry-pi)
  - [Autostart](https://github.com/MichMich/MagicMirror/wiki/auto-starting-magicmirror)
  - [JessieLite Install](https://github.com/MichMich/MagicMirror/wiki/jessie-lite-installation-guide)
- Core:
+
+### Core:
+
  - [Voice related modules](https://github.com/MichMich/MagicMirror/wiki/Voice-Related-Modules)
  - [Remote Control (Web Server)](https://forum.magicmirror.builders/topic/735/remote-control-shutdown-configure-and-update-your-magicmirror)
  - [Profile switcher](https://forum.magicmirror.builders/topic/1402/mmm-profileswitcher-a-profile-user-layout-switching-module)
@@ -28,12 +32,13 @@ tags: ["side project", "self hosted", "linux"]
  - [Pi Presence Sleep](https://github.com/RpDp-git/PiDisplaySleep)
  - [API-ish](https://github.com/juzim/MMM-Api)
 
- Finance
+### Finance
+
  - [Ethereum Price](https://github.com/ianperrin/MMM-ModuleScheduler)
  - [Currency Prices](https://github.com/mykle1/MMM-LICE)
  - [Stocks](https://github.com/hakanmhmd/MMM-Stock)
 
- Info
+### Info
  - [Weekly Schedule](https://github.com/pinsdorf/MMM-WeeklySchedule)
  - [RMV Info](https://github.com/Com-Lum/MMM-RMV)
  - [Monthly Cal View](https://github.com/KirAsh4/calendar_monthly/)
@@ -68,15 +73,15 @@ tags: ["side project", "self hosted", "linux"]
  - [German Word Clock](https://github.com/alexBeuth/MMM-germanwordclock)
  - [Manual Quote Catalog](https://github.com/salpar/MagicMirror-QuoteCatalog/)
 
- Voice
+### Voice
  - [Google Assistant](https://github.com/eouia/MMM-Assistant)
  - [Google Assitant #2](https://github.com/gauravsacc/MMM-GoogleAssistant)
 
- Weather
+### Weather
  - [Weather Underground](https://github.com/MattLugar/wuforecast)
  - [Weather Underground++](https://github.com/RedNax67/MMM-WunderGround)
 
- Multimedia
+### Multimedia
  - [Cast](https://github.com/flo80/MMM-chromecast)
  - [Youtube Embed](https://github.com/nitpum/MMM-EmbedYoutube)
  - [Tools - incl TelegramBot Screencap](https://github.com/eouia/MMM-Tools)
@@ -90,22 +95,22 @@ tags: ["side project", "self hosted", "linux"]
 
 ### Hardware:
 - [x] Monitor
-	1a) Newtelco extra [24" - 30cm x 53cm] **[€0,00]**
+		Newtelco extra [24" - 30cm x 53cm] **[€0,00]**
 
 - [x] Raspberry Pi 3B+
-	2a) Conrad  **[€37,99]**
-	2b) Powercable **[€8,99]**
+		Conrad  **[€37,99]**
+		Powercable **[€8,99]**
 
 - [x] Tape
-	3a) Conrad - clear montage double sided tape **[€8,99]**
+		Conrad - clear montage double sided tape **[€8,99]**
 
 - [x] Mirror
-	4a) [brigla-shop.de](http://brigla-shop.de/spionspiegel-334.html) [40cm x 60cm] **[€48,00]**
+		[brigla-shop.de](http://brigla-shop.de/spionspiegel-334.html) [40cm x 60cm] **[€48,00]**
 
 - [ ] Frame
-	5a) [IKEA Ribba-Weiß](https://www.ikea.com/de/de/catalog/products/00268876/) [50cm x 70cm] **[€14.99]**
-	5b) [UNIBOX](https://www.allesrahmen.de/ergaenzungsset-unibox-40x60weiss4.html?cnid=5020000) [40cm x 60cm x 5cm] **[€41,10]**
-	5c) [Rahmen für UNIBOX](https://www.allesrahmen.de/holzrahmen-avignon-40x60natur4.html?cnid=5045000) [40cm x 60cm] **[€18,40]**
+		[IKEA Ribba-Weiß](https://www.ikea.com/de/de/catalog/products/00268876/) [50cm x 70cm] **[€14.99]**
+		[UNIBOX](https://www.allesrahmen.de/ergaenzungsset-unibox-40x60weiss4.html?cnid=5020000) [40cm x 60cm x 5cm] **[€41,10]**
+		[Rahmen für UNIBOX](https://www.allesrahmen.de/holzrahmen-avignon-40x60natur4.html?cnid=5045000) [40cm x 60cm] **[€18,40]**
 
 ### Costs
 

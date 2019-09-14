@@ -13,12 +13,12 @@
 {# RSS Feed #}
 <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="{{ site.title }}">
 
-{# Indie Auth #}
-{# <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
-<link rel="token_endpoint" href="https://tokens.indieauth.com/token" /> #}
+{# Google Analytics #}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111339084-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-{# Webmentions #}
-{# <link rel="dns-prefetch" href="https://webmention.io">
-<link rel="preconnect" href="https://webmention.io">
-<link rel="pingback" href="https://webmention.io/mxb.dev/xmlrpc">
-<link rel="webmention" href="https://webmention.io/mxb.dev/webmention"> #}
+  gtag('config', 'UA-111339084-2');
+</script>

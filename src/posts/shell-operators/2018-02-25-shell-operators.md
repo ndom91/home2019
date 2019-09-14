@@ -1,8 +1,9 @@
 ---
 title:  "Bash Operators"
 tags: ["servers", "linux"]
-image: "bash.png"
 ---
+
+![bash](bash.png)
 
 These are called shell operators and yes, there are more of them. I will give a brief overview of the most common among the two major classes, control operators and redirection operators.
 
