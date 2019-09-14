@@ -3,6 +3,9 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const htmlmin = require('html-minifier')
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
+const markdownItEmoji = require('markdown-it-emoji')
+const markdownTasklists = require('markdown-it-task-lists');
+const markdownImageSize = require('markdown-it-imsize')
 
 const filters = require('./_eleventy/filters.js')
 const shortcodes = require('./_eleventy/shortcodes.js')
@@ -61,6 +64,9 @@ module.exports = function(config) {
                             .replace(/\s+/g, '-')
                 )
         })
+        .use(markdownEmoji)
+        .use(markdownTasklists)
+        .use(markdownImageSize)
     )
 
     // Collections: Navigation
