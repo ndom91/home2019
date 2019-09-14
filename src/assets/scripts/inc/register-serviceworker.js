@@ -1,8 +1,13 @@
 // Register Service Worker
-
+const isLive = (host) => {
+    if (host === 'ndo.dev' || host === 'iamnico.xyz' || host === 'ni.co.de') {
+        return true
+    } else {
+        return false
+    }
+}
 if ('serviceWorker' in navigator) {
-    console.log('env: ',process.env.NODE_ENV)
-    if (process.env.NODE_ENV !== 'production') {
+    if (!isLive(window.location.hostname)) {
         console.info('skipping service worker registration in development.')
     } else {
         window.addEventListener('load', () => {
