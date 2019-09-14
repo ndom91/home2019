@@ -1,5 +1,6 @@
 ---
 title:  "lynis auditing"
+tags: ["servers", "linux"]
 ---
 
 

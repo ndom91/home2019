@@ -1,5 +1,6 @@
 ---
 title:  "intro to server setup"
+tags: ["servers", "linux"]
 ---
 
 ![ubuntu splash](../assets/img/ubuntu16-04_tw_kevin.png)

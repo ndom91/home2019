@@ -1,5 +1,6 @@
 ---
 title:  "Remember the Milk Syntax"
+tags: ["organisation", "linux"]
 ---
 
 ### Smart Add  

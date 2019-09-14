@@ -1,5 +1,6 @@
 ---
 title:  "shell randos"
+tags: ["servers", "linux"]
 ---
 
 

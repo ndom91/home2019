@@ -22,20 +22,6 @@
     status = 301
     force = true
 
-# iamnico.xyz domain
-# [[redirects]]
-    # from = "https://iamnico.xyz/*"
-    # to = "https://ndo.dev/:splat"
-    # status = 301
-    # force = true
-
-# ni.co.de domain
-# [[redirects]]
-    # from = "https://ni.co.de/*"
-    # to = "https://ndo.dev/:splat"
-    # status = 301
-    # force = true
-
 # Favicon
 [[redirects]]
     from = "/assets/images/touch/*"

@@ -1,5 +1,6 @@
 ---
 title:  "iptables quickie"
+tags: ["servers", "linux"]
 ---
 
 Run the following. It'll insert the rule at the top of your iptables and will allow all traffic unless subsequently handled by another rule.

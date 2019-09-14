@@ -1,5 +1,6 @@
 ---
 title:  "headless rasp pi"
+tags: ["raspberry pi", "linux"]
 ---
 
 ### SSH

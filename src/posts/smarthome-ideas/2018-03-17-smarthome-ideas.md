@@ -1,5 +1,6 @@
 ---
 title:  "Smarthome Ideas"
+tags: ["side projects", "linux"]
 ---
 
 <h3> Smart Home - Schöne Aussicht 10a </h3>

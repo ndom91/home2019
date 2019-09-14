@@ -1,5 +1,6 @@
 ---
 title:  "magicmirror"
+tags: ["side project", "self hosted", "linux"]
 ---
 
 ### Software:

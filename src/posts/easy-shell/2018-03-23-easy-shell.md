@@ -1,5 +1,6 @@
 ---
 title:  "basic shell"
+tags: ["linux", "servers"]
 ---
 
 ## for your daily linux hacking

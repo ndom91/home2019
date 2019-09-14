@@ -1,5 +1,6 @@
 ---
 title:  "shell-operators"
+tags: ["servers", "linux"]
 ---
 ![bash](../assets/img/gnubash_logo_transparent.png)
 

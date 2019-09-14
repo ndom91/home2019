@@ -1,5 +1,6 @@
 ---
 title:  "Hangouts Emojis?"
+tags: ["web", "reverse-engineering"]
 ---
 
 So I've been looking for a list of emojis and their text counterparts for google hangouts. This seems like a fairly easy thing for them to publish, right? 

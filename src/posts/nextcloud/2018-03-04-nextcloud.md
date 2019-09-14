@@ -1,5 +1,6 @@
 ---
 title:  "nextcloud"
+tags: ["side project", "self hosted", "linux"]
 ---
 
 ![nextcloud splash](../assets/img/nextcloud_splash3.png)
