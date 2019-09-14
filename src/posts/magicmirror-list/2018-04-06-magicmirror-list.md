@@ -89,20 +89,20 @@ tags: ["side project", "self hosted", "linux"]
 
 
 ### Hardware:
-[x] Monitor
+- [x] Monitor
 	1a) Newtelco extra [24" - 30cm x 53cm] **[€0,00]**
 
-[x] Raspberry Pi 3B+
+- [x] Raspberry Pi 3B+
 	2a) Conrad  **[€37,99]**
 	2b) Powercable **[€8,99]**
 
-[x] Tape
+- [x] Tape
 	3a) Conrad - clear montage double sided tape **[€8,99]**
 
-[x] Mirror
+- [x] Mirror
 	4a) [brigla-shop.de](http://brigla-shop.de/spionspiegel-334.html) [40cm x 60cm] **[€48,00]**
 
-[?] Frame
+- [ ] Frame
 	5a) [IKEA Ribba-Weiß](https://www.ikea.com/de/de/catalog/products/00268876/) [50cm x 70cm] **[€14.99]**
 	5b) [UNIBOX](https://www.allesrahmen.de/ergaenzungsset-unibox-40x60weiss4.html?cnid=5020000) [40cm x 60cm x 5cm] **[€41,10]**
 	5c) [Rahmen für UNIBOX](https://www.allesrahmen.de/holzrahmen-avignon-40x60natur4.html?cnid=5045000) [40cm x 60cm] **[€18,40]**
