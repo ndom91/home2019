@@ -3,13 +3,18 @@
 body {
     overflow-x: hidden;
     transition: color 0.2s ease-out, background-color 0.2s ease-out;
+    border-right: 15px solid $header-border-color;
+    border-right: 15px solid var(--header-border-color);
+    border-left: 15px solid $header-border-color;
+    border-left: 15px solid var(--header-border-color);
+    border-bottom: 15px solid $header-border-color;
+    border-bottom: 15px solid var(--header-border-color);
 }
 
 .layout {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 15px);
     position: relative;
 
     .header,
