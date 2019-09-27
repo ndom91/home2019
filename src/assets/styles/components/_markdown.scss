@@ -149,6 +149,20 @@
         }
     }
 
+    a > code {
+        border: 1px solid #fc6767 !important;
+
+        &:hover {
+            border: 2px solid #fc6767 !important;
+            color: #fc6767 !important;
+        }
+
+        a & {
+            box-shadow: unset;
+            border-bottom: unset;
+        }
+    }
+
     /* Inline code */
     :not(pre) > code {
         display: inline-block;
