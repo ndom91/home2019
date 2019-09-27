@@ -12,7 +12,7 @@ All credit goes to [lucasviola](https://github.com/lucasviola/easyshell) on GitH
 
 This is a basics guide intended to help newcomers and experienced Linux users alike get more comfortable with Bash.
 
-This is not a tutorial or anything of that nature, just a collection of useful commands, materials, tips and tricks gathered from around the internet.
+This is not a tutorial or anything of that nature, jjjjkust a collection of useful commands, materials, tips and tricks gathered from around the internet.
 
 ## Introduction
 
@@ -52,16 +52,18 @@ DESCRIPTION
 
 - To view a brief summary on any program:
   
+
 `whatis <program>`
 
 - You can find out where a file is located by typing:
   
+
 `whereis <program>` or `locate <program>`
 
 - To change user:
 
 `sudo -u <user>`
- 
+
 - To change user to superuser (root):
 
 `sudo su`
@@ -70,6 +72,7 @@ DESCRIPTION
 
 - To see your session history:
   
+
 `history`
 
 - `|` is the pipe character and is used to 'pipe' the output from one command into another as the input.
@@ -77,9 +80,10 @@ DESCRIPTION
 Remember `ps` lists running processes. That list can be huge, so if we want to search only for processes running which include the word 'init' (hint `grep` filters output): 
 
 `ps -aux | grep init`
- 
+
 - Similarly `>` and `>>` are called angle brackets and are used to redirect output. For example, you can write the output of one command into a file by doing:
   
+
 `echo "any random sentence" >> any-random-file.txt`
 or
 `ps -aux | grep chrome >> any-random-file.txt`
@@ -98,6 +102,7 @@ or
 
 - To decompress a tarball:
   
+
 `tar -xvf <compressed-file.tar.gz>`
 
 > Note: Flag **-v** is for verbosity.
@@ -123,38 +128,38 @@ exec bash
 Show all network interfaces
 
 `ifconfig`
- 
+
 
 Configure a wireless network interface
 
-  
+
 `iwconfig`
- 
+
 
 Get more information about wireless interface
 
-  
+
 `iwlist <your_interface_here> scan`
- 
+
 
 <!---excerpt--->
 Check hardware information include about your network, this shows PCIs drivers which is installed or not
 
-  
+
 `lspci`
- 
+
 
 Show who is connected in your network  
 
-  
+
 `nmap 192.168.0.*`
- 
+
 
 Verify if you have any open port
 
-  
+
 `nmap <your_ip>`
- 
+
 
 ## Custom Bash
 
@@ -164,9 +169,9 @@ The `PS1` environment variable contains the style for the bash cursor:
 
 Export it to your ~/.bashrc file:
 
-  
+
 `export PS1='\u@\h \$'`
- 
+
 
 This will print the following as a cursor: `user@host $`
 
@@ -208,65 +213,67 @@ Bit bucket (as known as the black hole, one of the linux's special files):
 `/dev/null`
 
 Standard input stream:
-  
+
 `STDIN`
 
 Standard outpout streams:
-  
+
 `STDERR and STDOUT`
 
 Tailing files (getting the last lines)
-  
+
 `tail <file>`
 
 Outputing whole file content
-  
+
 `cat <file>`
- 
+
 Reading from `STDIN` to a file (stop with `CTRL + C`)
 
 `cat > <file>`
 
 Reading from file to another file
-  
+
 `cat <file1> > <file2>`
 
 Reading all lines of file with line numbers
-  
+
 `cat -n <file>`
 
 Saving output to file (using nano editor, allowing you to edit before saving)
-  
+
 `<command> | nano file_name`
 
 Searching through the output
-  
+
 `<command> | grep <term>`
 
 Displaying output in a file-like style (`less` allows searching by pressing `/`)
-  
+
 `<command> | less`
 or
 `<command> | more`
 
 Continue running after command. This will not block further running while the program waits on something (network, user input, etc.)
-  
+
 `<command>&`
 
 [!] Ignoring file output completely (note that `2 = STDERR` and `1 = STDOUT`)
-  
+
 `<command> > /dev/null 2 > &1`
 
 ## File Permissions
 
 - To change the owner of a directory (recursively):
   
+
 `sudo chown -R newowneruser:newownergroup`
 
 - To view actual files permissions
   
+
 ls -l
- 
+
 ```bash
   - Example: `drwxr-xr-x`:
     - First letter is the file type:
@@ -323,11 +330,11 @@ ls -l
 ## Managing Processes
 
 To list all processes on your system
-  
+
 `ps -aux`
 
 To list all processes running as root
-  
+
 `ps -U root -u root u`
 
 To list all processes owned by you
@@ -335,66 +342,67 @@ To list all processes owned by you
 `ps x`
 
 Searching processes by keyword
-  
+
 `ps -aux | grep '<keyword>'`
 
 Listing it Tree style
-  
+
 `ps -aux --forest`
 
 Killing a specific process
-  
+
 `sudo kill -9 <PID>`
 
 Killing all processes except for kill and init
-  
+
 `sudo kill -9 -1`
 
 ## Working with environment and variables
 
 Listing local variables
-  
+
 `set`
 
 Listing global variables
-  
+
 `env`
 
 Printing variable content
-  
+
 `$ foo='This is a variable!'`
 `$ echo $foo`
 
 Looking for a local variable
-  
+
 `set | grep foo`
 
 Exporting it to env
-  
+
 `$ export foo`
 `$ env | grep foo`
 
 Useful environment variables
-  
+
 - $PS1 your prompt setup
 - $PATH your path setup
 - $USER your current user
 
 The most important files regarding your environment are:
-  
+
 1. $ ~/.profile
 2. $ ~/.bashrc
 
 Both of them are shell scripts and contain instructions which are executed when you log in.
 
 Permanently exporting variables to your PATH:
-  
+
 echo 'export $PATH="$PATH:/path/to/file/"' >> ~/.bashrc
 
 ## Working with files
 
 - Where am I?
   
+
 `pwd`
 
 - Creating Files
@@ -403,14 +411,17 @@ echo 'export $PATH="$PATH:/path/to/file/"' >> ~/.bashrc
 
 - Changing directories
   
+
 `cd path/to/directory`
 
 - Moving things around
   
+
 `mv -v <filename> /another/path/`
 
 - Deleting things FOREVER
   
+
 `sudo mv -v <filename> /dev/null/`
 
 - Copying stuff
@@ -419,18 +430,22 @@ echo 'export $PATH="$PATH:/path/to/file/"' >> ~/.bashrc
 
 - Deleting files
   
+
 `rm -v <filename>`
 
 - Deleting folders
   
+
 `rm -vR /path/to/<folder>`
 
 - Updating timestamp:
   
+
 `touch <filename>`
 
 - Listing files and directories
   
+
 `ls -al`
 
 Notes:
@@ -439,13 +454,16 @@ Notes:
 
 - Printing the content of a file:
   
+
 `cat <filename.txt>`
 
 - Printing the last 2 lines of a file:
   
+
 `tail -n 2 <filename.txt>`
 
 - Printing the first 2 lines of a file:
   
+
 `head -n 2 <filename.txt>`
- 
+
