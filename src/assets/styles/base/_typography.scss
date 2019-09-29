@@ -47,13 +47,13 @@ a {
 }
 
 a > :not(code) {
-    color: $brand-color-primary;
-    color: var(--brand-color-primary);
+    // color: $brand-color-primary;
+    // color: var(--brand-color-primary);
     text-decoration: none;
 
     @include hover-focus {
-        color: $brand-color-primary-offset;
-        color: var(--brand-color-primary-offset);
+        // color: $brand-color-primary-offset;
+        // color: var(--brand-color-primary-offset);
     }
 }
 
