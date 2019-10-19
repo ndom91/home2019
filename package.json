@@ -1,6 +1,6 @@
 {
   "name": "ndo.dev",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Personal Website of Nico Domino",
   "scripts": {
     "start": "gulp build:dev && npm run serve",
