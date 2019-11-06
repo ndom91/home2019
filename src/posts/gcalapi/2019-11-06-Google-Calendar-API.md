@@ -1,3 +1,9 @@
+---
+title:  "Google Calendar API Sucks"
+tags: ["google calendar", "api", "rant"]
+demo: "https://github.com/ndom91/next-maintenance"
+---
+
 # Google Calendar API Sucks
 
 I've been building a little enterprise app at work to deal with network maintenances and it has a good deal of Google Calendar integration. 
