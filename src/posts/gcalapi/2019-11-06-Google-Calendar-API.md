@@ -4,7 +4,7 @@ tags: ["google calendar", "api", "rant"]
 demo: "https://github.com/ndom91/next-maintenance"
 ---
 
-# Google Calendar API Sucks
+<rant>
 
 I've been building a little enterprise app at work to deal with network maintenances and it has a good deal of Google Calendar integration. 
 
@@ -12,7 +12,7 @@ Please tell me if this makes sense to you..
 
 When creating an event you get an event object back with all the details, which looks like this:
 
-```javascript
+```
 {
   "kind": "calendar#event",
   "etag": "\"3146056453636000\"",
