@@ -4,7 +4,7 @@ tags: ["google calendar", "api", "rant"]
 demo: "https://github.com/ndom91/next-maintenance"
 ---
 
-<rant>
+\<rant>
 
 I've been building a little enterprise app at work to deal with network maintenances and it has a good deal of Google Calendar integration. 
 
@@ -67,6 +67,6 @@ You have to parse this URL manually and extract the `eid` parameter just to save
 
 Without it you obviously cannot manipulate the calendar entry later on. 
 
-Come on Google - I thought there were better than this.
+Come on Google - I thought you were better than this.
 
-</rant>
+\</rant>
