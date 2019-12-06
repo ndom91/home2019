@@ -125,12 +125,14 @@ You can use my source here:
 
 And now if you visit your URL that you set in the nginx config above, you should see something like: 
 
-![screenshot](standardfile.png)
+![bash]({{ 'standardfile.png' | media(page) }})
 
 !!! note
 		Remember this is not the Standard Notes frontend web application - this is just the backend server. 
 
-You can now visit app.standardnotes.org and set the backend server URL to your new server.
+In the Account menu, enter the address of your new server in "Sync Server Domain" under "Advanced Options".
+
+Then, register for a new account, and begin using your private new secure Standard Notes server!
 
 
 
