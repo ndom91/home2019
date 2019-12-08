@@ -3,13 +3,11 @@ title:  "Docker + Localhost MySQL"
 tags: ["servers", "linux", "mysql", "docker"]
 ---
 
-# Docker + Host MySQL
-
-So I was having the hardest time getting docker containers to connect to my hosts instance of mysql. 
+I was having the hardest time getting docker containers to connect to the hosts instance of mysql. 
 
 I finally found a great solution, so I wanted to post it here for myself and others in the future:
 
-Enable route_localnet for docker0 interface:
+Enable `route_localnet` for docker0 interface:
 
 `$ sysctl -w net.ipv4.conf.docker0.route_localnet=1`
 
