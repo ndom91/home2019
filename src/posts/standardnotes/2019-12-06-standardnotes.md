@@ -127,8 +127,7 @@ And now if you visit your URL that you set in the nginx config above, you should
 
 ![bash]({{ 'standardfile.png' | media(page) }})
 
-!!! note
-		Remember this is not the Standard Notes frontend web application - this is just the backend server. 
+> Remember this is not the Standard Notes frontend web application - this is just the backend server. 
 
 In the Account menu, enter the address of your new server in "Sync Server Domain" under "Advanced Options".
 

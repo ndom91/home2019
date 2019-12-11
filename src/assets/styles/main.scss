@@ -51,3 +51,16 @@
 @import 'components/alert';
 @import 'components/spinner';
 @import 'components/sharer';
+
+pre {
+	background-color: #373a3c;
+  color: #f7f7f9;
+  padding: 5vw 20vw;
+  width: 100vw;
+  -webkit-transform: translateX(-31vw);
+  transform: translateX(-31vw);
+  margin: 40px 0;
+  font-size: 80%;
+  overflow-wrap: normal;
+  line-height: 2;
+}
