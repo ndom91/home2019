@@ -1,16 +1,38 @@
+pre {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+code[class*='language-'],
+span.highlight-line {
+  background: #373a3c !important;
+  background-color: #373a3c !important;
+}
+
+pre:not([class]) {
+  transform: translateX(-22vw) !important;
+}
+
 code[class*='language-'],
 pre[class*='language-'] {
-    font-family: $font-family-monospace;
-    font-size: 1em;
-    line-height: 1.85;
-    direction: ltr;
-    text-align: left;
-    word-spacing: normal;
-    tab-size: 4;
-    hyphens: none;
-    white-space: pre;
-    background: #1d1f21;
-    color: #f9f8f5;
+  font-family: $font-family-monospace;
+  font-size: 1em;
+  line-height: 1.85;
+  direction: ltr;
+  text-align: left;
+  word-spacing: normal;
+  tab-size: 4;
+  hyphens: none;
+  white-space: pre;
+  background: #1d1f21;
+  color: #f9f8f5;
+  width: 100vw;
+  transform: translateX(0vw) !important;
+  margin: 40px 0;
+  font-size: 80%;
+  overflow-wrap: normal;
+  line-height: 2;
 }
 
 .token.comment,
