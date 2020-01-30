@@ -1,36 +1,43 @@
 [build]
-    command = "npm run build"
-    publish = "dist"
-    functions = "functions"
+  command = "yarn run build"
+  publish = "dist"
+  functions = "functions"
 
 [build.environment]
-    NODE_ENV = "production"
-    NODE_VERSION = "10.15"
-    YARN_VERSION = "1.16.0"
+  NODE_ENV = "production"
+  NODE_VERSION = "10.15"
+  YARN_VERSION = "1.21.1"
 
 [[headers]]
-    for = "/*"
-    [headers.values]
-        X-Frame-Options = "DENY"
-        X-XSS-Protection = "1; mode=block"
-        X-Content-Type-Options = "nosniff"
-        Referrer-Policy= "no-referrer-when-downgrade"
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy= "no-referrer-when-downgrade"
 
 # Netlify subdomain
 [[redirects]]
-    from = "https://ndom91.netlify.com/*"
-    to = "https://ndo.dev/:splat"
-    status = 301
-    force = true
+	from = "https://ndom91.netlify.com/*"
+	to = "https://ndo.dev/:splat"
+	status = 301
+	force = true
+
+# Bots
+[[redirects]]
+	from = "/wp-login.php"
+	to = "https://www.google.com/"
+	status = 302
+	force = true
 
 # Favicon
 [[redirects]]
-    from = "/assets/images/touch/*"
-    to = "/assets/images/favicon/:splat"
-    status = 301
+	from = "/assets/images/touch/*"
+	to = "/assets/images/favicon/:splat"
+	status = 301
 
 # 404s
 [[redirects]]
-    from = "*"
-    to = "/404"
-    status = 404
+	from = "*"
+	to = "/404"
+	status = 404
