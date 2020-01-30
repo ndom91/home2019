@@ -1,44 +1,52 @@
-[ 
-    {
-      "name": "Vacation",
-      "url": "https://github.com/ndom91/CompanyVacations",
-      "image": "/assets/images/screenshots/vacationnewtelco.png",
-      "desc": "Company Vacation application for making, approving, auditing, and checking up on vacation requests."
-    },{
-      "name": "Network Maintenance - Next.js",
-      "url": "https://github.com/ndom91/next-maintenance",
-      "image": "/assets/images/screenshots/maintenance_new.png",
-      "desc": "Application for managing, organizing, and auditing Network Maintenance requests, including forwarding notices onto customers - rewrite with Next.js / React"
-    },{
-      "name": "Youtube Playlists",
-      "url": "https://github.com/ndom91/youtube-playlists",
-      "image": "/assets/images/screenshots/youtube.png",
-      "desc": "Side-project for creating dynamic on-the-fly YouTube Playlists."
-    },{
-      "name": "Newtelco Landing",
-      "url": "https://github.com/ndom91/ndo-nt-landing",
-      "image": "/assets/images/screenshots/homenewtelco.png",
-      "desc": "Browser Landing page for Employees @ Newtelco GmbH"
-    },{
-      "name": "NOC Dashboard",
-      "urL": "https://github.com/ndom91/nt-noc-dashboard",
-      "image": "/assets/images/screenshots/nocdashboard.png",
-      "desc": "Network Operations Center Dashboard which is displayed 24/7 on a large display in the Engineers office."
-    },{
-      "name": "Terminal-Homepage",
-      "url": "https://github.com/ndom91/terminal-homepage",
-      "image": "/assets/images/screenshots/terminal.gif",
-      "desc": "Pika / Preact example project. Typer effect in Terminal."
-    },{
-      "name": "Network Maintenances",
-      "url": "https://github.com/ndom91/NewtelcoMaintenance",
-      "image": "/assets/images/screenshots/maintenance.png",
-      "desc": "Application for managing, organizing, and auditing Network Maintenance requests, including forwarding notices onto customers."
-    },{
-      "name": "create-pika-app - node cli",
-      "url": "https://github.com/ndom91/create-pika-app",
-      "image": "/assets/images/screenshots/cpa.gif",
-      "desc": "Bootstrapping command line application for Pika(web). Spits out a beginner Preact/Typescript/Babel/Pika Project."
-    }
-
- ]
+;[
+  {
+    name: 'Company Absences',
+    url: 'https://github.com/ndom91/timeoff',
+    image: '/assets/images/screenshots/timeoff.png',
+    desc:
+      'Company Vacation application for making, approving, auditing, and checking up on vacation requests.'
+  },
+  {
+    name: 'Network Maintenance - Next.js',
+    url: 'https://github.com/ndom91/next-maintenance',
+    image: '/assets/images/screenshots/maintenance.png',
+    desc:
+      'Application for managing, organizing, and auditing Network Maintenance requests, including forwarding notices onto customers - rewrite with Next.js / React'
+  },
+  {
+    name: 'Youtube Playlists',
+    url: 'https://github.com/ndom91/youtube-playlists',
+    image: '/assets/images/screenshots/youtube.png',
+    desc: 'Side-project for creating dynamic on-the-fly YouTube Playlists.'
+  },
+  {
+    name: 'Newtelco Landing',
+    url: 'https://github.com/ndom91/ndo-nt-landing',
+    image: '/assets/images/screenshots/homenewtelco.png',
+    desc: 'Browser Landing page for Employees @ Newtelco GmbH'
+  },
+  {
+    name: 'NOC Dashboard',
+    urL: 'https://github.com/ndom91/nt-noc-dashboard',
+    image: '/assets/images/screenshots/nocdashboard.png',
+    desc:
+      'Network Operations Center Dashboard which is displayed 24/7 on a large display in the Engineers office.'
+  },
+  {
+    name: 'Terminal-Homepage',
+    url: 'https://github.com/ndom91/terminal-homepage',
+    image: '/assets/images/screenshots/terminal.gif',
+    desc: 'Pika / Preact example project. Typer effect in Terminal.'
+  },
+  {
+    name: 'snowpack-init - node cli',
+    url: 'https://github.com/pikapkg/snowpack-init',
+    image: '/assets/images/screenshots/snowpack.gif',
+    desc: 'Bootstrapping command line application for @pikgpkg/snowpack.'
+  }
+]
+    "url": "https://github.com/pikapkg/snowpack-init",
+    "image": "/assets/images/screenshots/snowpack.gif",
+    "desc": "Bootstrapping command line application for @pikgpkg/snowpack."
+  }
+]
