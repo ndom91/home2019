@@ -9,8 +9,8 @@ const mapValues = require("lodash/mapValues");
 
 // Define Script Entrypoints Here
 const SCRIPTS = {
-  main: "main.js",
-  map: "map/index.js"
+  main: "main.js"
+  /* map: "map/index.js" */
 };
 
 // Provide JS build with current env
@@ -41,12 +41,15 @@ gulp.task("scripts", function() {
   return gulp
     .src(config.assetSrc + "/scripts/main.js")
     .pipe(
-      webpackStream({
-        entry: entryPaths,
-        output: { filename: "[name].js" },
-        module: { rules: [babelConfig] },
-        plugins: [envPlugin]
-      })
+      webpackStream(
+        {
+          entry: entryPaths,
+          output: { filename: "[name].js" },
+          module: { rules: [babelConfig] },
+          plugins: [envPlugin]
+        },
+        webpack
+      )
     )
     .pipe(uglify())
     .pipe(gulp.dest(config.assetDest + "/js"));
