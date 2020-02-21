@@ -29,7 +29,8 @@
     "markdown-it-task-lists": "^2.1.1",
     "markdown-it-video": "^0.6.3",
     "preact": "^8.5.3",
-    "svgxuse": "^1.2.6"
+    "svgxuse": "^1.2.6",
+    "typescript-eslint-parser": "^22.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
