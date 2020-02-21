@@ -1,5 +1,5 @@
 const gulp = require("gulp");
-const exec = require("child_process").exec();
+const exec = require("child_process").exec;
 
 require("dotenv").config();
 
