@@ -9,7 +9,7 @@ const mapValues = require("lodash/mapValues");
 
 // Define Script Entrypoints Here
 const SCRIPTS = {
-  main: "main.js"
+  main: "main.js",
   map: "map/index.js"
 };
 
