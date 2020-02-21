@@ -9,8 +9,8 @@ const mapValues = require("lodash/mapValues");
 
 // Define Script Entrypoints Here
 const SCRIPTS = {
-  main: "main.js",
-  map: "map/index.js"
+  main: "main.js"
+  /* map: "map/index.js" */
 };
 
 // Provide JS build with current env
