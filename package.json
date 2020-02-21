@@ -22,6 +22,7 @@
     "focus-visible": "^4.1.5",
     "infinite-scroll": "^3.0.5",
     "lodash": "^4.17.15",
+    "lodash.last": "^3.0.0",
     "markdown-it-anchor": "^5.2.5",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-imsize": "^2.0.1",
