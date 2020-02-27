@@ -22,7 +22,7 @@ const watchers = {
 /*
   BrowserSync Dev Server
 */
-gulp.task("browsersync", function(done) {
+gulp.task("serve", function(done) {
   server.init({
     server: { baseDir: config.buildDest }
   });

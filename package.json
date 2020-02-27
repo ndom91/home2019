@@ -1,12 +1,13 @@
 {
   "name": "ndo.dev",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Personal Website of Nico Domino",
   "scripts": {
-    "start": "gulp build:dev && npm run serve",
+    "start": "NODE_ENV=development gulp build:dev",
     "build": "NODE_ENV=production gulp build",
     "debug": "DEBUG=Eleventy* npm start",
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",

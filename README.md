@@ -41,4 +41,4 @@ The most important commands can be run as npm scripts:
 
 --- 
 
-🙏 `Special thanks to` [`maxboeck/mxb`](https://github.com/maxboeck/mxb)
+🙏 Special thanks to [`maxboeck/mxb`](https://github.com/maxboeck/mxb)

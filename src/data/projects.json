@@ -1,49 +1,91 @@
 [
   {
+    "name": "Newtelco Homepage",
+    "url": "https://github.com/ndom91/newtelco-gatsby-netlify",
+    "image": "/assets/images/screenshots/newtelcohome.png",
+    "desc": "Homepage redesign for NewTelco GmbH (2020)",
+    "tech": [
+      "gatsby",
+      "react",
+      "cloudflareworkers",
+      "reactspring",
+      "netlify"
+    ]
+  },
+  {
     "name": "Company Absences",
     "url": "https://github.com/ndom91/timeoff",
     "image": "/assets/images/screenshots/timeoff.png",
-    "desc": "Company Vacation application for making, approving, auditing, and checking up on vacation requests."
+    "desc": "Company Absences Management application for making, approving, auditing, and checking up on vacation/sick/business trip requests",
+    "tech": [
+      "nextjs",
+      "react",
+      "activedirectory"
+    ]
   },
   {
-    "name": "Network Maintenance - Next.js",
+    "name": "Network Maintenance",
     "url": "https://github.com/ndom91/next-maintenance",
     "image": "/assets/images/screenshots/maintenance.png",
-    "desc": "Application for managing, organizing, and auditing Network Maintenance requests, including forwarding notices onto customers - rewrite with Next.js / React"
+    "desc": "Application for managing, organizing, and auditing Network Maintenance requests from suppliers and forwarding on notifications to the appropriate customers",
+    "tech": [
+      "nextjs",
+      "react",
+      "algolia",
+      "express",
+      "nodejs"
+    ]
   },
   {
     "name": "Youtube Playlists",
     "url": "https://github.com/ndom91/youtube-playlists",
     "image": "/assets/images/screenshots/youtube.png",
-    "desc": "Side-project for creating dynamic on-the-fly YouTube Playlists."
+    "desc": "Side-project for creating dynamic YouTube Playlists. PWA which makes use of the Web Share Target API as well as Google's Cast API (Coming Soon)",
+    "tech": [
+      "react",
+      "styledcomponents",
+      "cloudflareworkers",
+      "netlify"
+    ]
   },
   {
     "name": "Newtelco Landing",
-    "url": "https://github.com/ndom91/ndo-nt-landing",
+    "url": "https://github.com/ndom91/gatsby-landing",
     "image": "/assets/images/screenshots/homenewtelco.png",
-    "desc": "Browser Landing page for Employees @ Newtelco GmbH"
+    "desc": "Browser 'New Tab' page for Employees at Newtelco GmbH",
+    "tech": [
+      "react",
+      "gatsby",
+      "styledcomponents",
+      "cloudflareworkers",
+      "netlify"
+    ]
   },
   {
     "name": "NOC Dashboard",
     "urL": "https://github.com/ndom91/nt-noc-dashboard",
     "image": "/assets/images/screenshots/nocdashboard.png",
-    "desc": "Network Operations Center Dashboard which is displayed 24/7 on a large display in the Engineers office."
+    "desc": "Network Operations Center Dashboard which is displayed 24/7 on a large display in our office. Includes stats from Netdata as well as Observium and live video feeds transcoded via ffmpeg live for displaying in the browser"
   },
   {
-    "name": "Terminal-Homepage",
+    "name": "PreactTyper",
     "url": "https://github.com/ndom91/terminal-homepage",
     "image": "/assets/images/screenshots/terminal.gif",
-    "desc": "Pika / Preact example project. Typer effect in Terminal."
+    "desc": "Pika / Preact example project. Typer effect in Terminal",
+    "tech": [
+      "preact",
+      "pika",
+      "typescript"
+    ]
   },
   {
-    "name": "snowpack-init - node cli",
+    "name": "@pikapkg/snowpack-init",
     "url": "https://github.com/pikapkg/snowpack-init",
     "image": "/assets/images/screenshots/snowpack.gif",
-    "desc": "Bootstrapping command line application for @pikgpkg/snowpack."
-  },
-  {
-    "url": "https://github.com/pikapkg/snowpack-init",
-    "image": "/assets/images/screenshots/snowpack.gif",
-    "desc": "Bootstrapping command line application for @pikgpkg/snowpack."
+    "desc": "Bootstrapping cli for @pikapkg/snowpack",
+    "tech": [
+      "nodejs",
+      "pika"
+    ]
   }
 ]

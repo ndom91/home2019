@@ -30,84 +30,139 @@
     }
 
     .projects {
+        transform-style: preserve-3d;
         h4 {
             font-family: monospace;
         }
     }
 
-    .decorativeSquare {
-        background-color: $brand-color-primary;
-        position: absolute;
-        top: -20px;
-        left: -20px;
-        height: 200px;
-        width: 200px;
-        z-index: -1;
-    }
 
-    .decorativeSquare2 {
-        background-color: $brand-color-primary;
-        position: absolute;
-        bottom: -20px;
-        right: -20px;
-        height: 200px;
-        width: 200px;
-        z-index: -1;
-    }
+    .project {
 
-    .project__card {
-        border: 1px solid $gray-light;
-        position: relative;
-        background: #fff;
-        margin: 60px 0;
-    }
+        &__square {
+            background-color: $brand-color-primary;
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            transform: translate3d(0, 0, -1rem);
 
-    .project__details {
-        width: 100%;
-        padding: 20px;
-        background: $gray-light;
-    }
+            &--left {
+                top: -15px;
+                left: -15px;
+                border-radius: 10px 0 0 0;
+            }
 
-    .project__details:before {
-        position: absolute;
-        width: 100%;
-        height: 20px;
-        background-color: linear-gradient(to top, #ececec, rgba(0,0,0,0))
-    }
+            &--right {
+                bottom: -15px;
+                right: -15px;
+                border-radius:  0 0 10px 0;
+            }
+        }
 
-    .project__screenshot {
-        width: 100%;
-        margin: 20px;
-        max-width: 600px;
-        border: 25px solid $gray-light;
-        overflow:hidden;
-        z-index: -2;
-    }
+        &__card {
+            border: 1px solid $gray-light;
+            border-radius: 10px;
+            position: relative;
+            background: #fff;
+            margin: 150px 0;
+            transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+            transform-style: preserve-3d;
 
-    .project__label {
-        display: inline-block;
-    }
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0  5px 10px rgba(0,0,0,0.2);
+            }
+        }
 
-    .project__label::after {
-        content: '';
-        height: 5px;
-        background-color: $brand-color-primary;
-        position: absolute;
-        left: 0rem;
-        width: 100%;
-        bottom: -5px;
-        transform: scaleX(0);
-        transform-origin: 0 50%;
-        transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-    }
+        &__techWrapper {
+            display: flex;
+            justify-content: space-around;
+        }
 
-    .project__label:hover::after {
-        transform: scaleX(1);
-    }
+        &__tech {
+            max-width: 96px;
+        }
 
-    .project__desc {
-        font-size: 1rem;
-        color: $text-color-secondary;
+        &__details {
+            width: 100%;
+            padding: 20px;
+            background: $gray-light;
+            border-radius: 0 0 10px 10px;
+        }
+
+        &__details:before {
+            position: absolute;
+            width: 100%;
+            height: 20px;
+            background-color: linear-gradient(to top, #ececec, rgba(0,0,0,0))
+        }
+
+        &__screenshot {
+            width: 100%;
+            margin: 20px;
+            max-width: 600px;
+            border: 25px solid $gray-light;
+            overflow:hidden;
+            z-index: -2;
+        }
+
+        &__label {
+            display: inline-block;
+            vertical-align: middle;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            position: relative;
+            transition-property: color;
+            transition-duration: 250ms;
+            padding: 5px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: -20px;
+                bottom: 0;
+                background: $brand-color-primary;
+                transform: scaleX(0);
+                transform-origin: 0 50%;
+                transition-property: transform;
+                transition-duration: 250ms;
+                transition-timing-function: ease-out;
+            }
+
+            &:hover, &:focus, &:active {
+                color: white;
+            }
+
+            &:hover .project__label--link {
+                stroke: #fff;
+            }
+
+            &:hover:before, &:focus:before, &:active:before {
+                transform: scaleX(1);
+            }
+
+            &--link {
+                width: 18px;
+                stroke: $brand-color-primary;
+                fill: none;
+                display: inline-block;
+                transition: stroke 150ms ease-in;
+
+                position: absolute;
+                bottom: 7px;
+                right: -17px;
+            }
+        }
+
+
+        &__desc {
+            font-size: 1rem;
+            color: $text-color-secondary;
+        }
+
     }
 
     @include mq(lg) {
