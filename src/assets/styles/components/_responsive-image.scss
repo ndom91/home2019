@@ -2,8 +2,7 @@
     @include coverall;
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    margin: 0 auto;
 
     // on IE, these are divs with background-image style
     &--fallback {

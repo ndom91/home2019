@@ -5,9 +5,9 @@
     "image": "/assets/images/screenshots/newtelcohome.png",
     "desc": "Homepage redesign for NewTelco GmbH (2020)",
     "tech": [
-      "gatsby",
       "react",
       "cloudflareworkers",
+      "gatsby",
       "reactspring",
       "netlify"
     ]
@@ -18,8 +18,8 @@
     "image": "/assets/images/screenshots/timeoff.png",
     "desc": "Company Absences Management application for making, approving, auditing, and checking up on vacation/sick/business trip requests",
     "tech": [
-      "nextjs",
       "react",
+      "nextjs",
       "activedirectory"
     ]
   },
@@ -29,8 +29,8 @@
     "image": "/assets/images/screenshots/maintenance.png",
     "desc": "Application for managing, organizing, and auditing Network Maintenance requests from suppliers and forwarding on notifications to the appropriate customers",
     "tech": [
-      "nextjs",
       "react",
+      "nextjs",
       "algolia",
       "express",
       "nodejs"
@@ -43,8 +43,8 @@
     "desc": "Side-project for creating dynamic YouTube Playlists. PWA which makes use of the Web Share Target API as well as Google's Cast API (Coming Soon)",
     "tech": [
       "react",
-      "styledcomponents",
       "cloudflareworkers",
+      "styledcomponents",
       "netlify"
     ]
   },
@@ -55,9 +55,9 @@
     "desc": "Browser 'New Tab' page for Employees at Newtelco GmbH",
     "tech": [
       "react",
+      "cloudflareworkers",
       "gatsby",
       "styledcomponents",
-      "cloudflareworkers",
       "netlify"
     ]
   },
@@ -73,8 +73,8 @@
     "image": "/assets/images/screenshots/terminal.gif",
     "desc": "Pika / Preact example project. Typer effect in Terminal",
     "tech": [
-      "preact",
       "pika",
+      "preact",
       "typescript"
     ]
   },
@@ -84,8 +84,8 @@
     "image": "/assets/images/screenshots/snowpack.gif",
     "desc": "Bootstrapping cli for @pikapkg/snowpack",
     "tech": [
-      "nodejs",
-      "pika"
+      "pika",
+      "nodejs"
     ]
   }
 ]
