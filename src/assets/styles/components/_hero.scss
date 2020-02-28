@@ -42,6 +42,14 @@
         }
     }
 
+    &__antibr {
+        margin-right:5px;
+
+        @include mq(lg) {
+            display: none;
+        }
+    }
+
     &__br {
         display: none;
 
