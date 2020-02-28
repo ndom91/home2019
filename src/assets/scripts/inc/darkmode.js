@@ -55,6 +55,7 @@ class DarkMode {
             CLASSES.darkMode,
             this.isActive
         )
+        console.log(this.isActive)
         this.toggleBtn.setAttribute('aria-checked', String(this.isActive))
 
         if (this.hasLocalStorage()) {
